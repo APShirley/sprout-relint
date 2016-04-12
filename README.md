@@ -23,8 +23,8 @@ If you receive a message about the update server being unavailable and are on Ma
 
 ### 2. Clone this project
 
-    git clone https://github.com/cloudfoundry/sprout-capi.git
-    cd sprout-capi
+    git clone https://github.com/cloudfoundry/sprout-relint.git
+    cd sprout-relint
 
 ### 3. Install soloist & and other required gems
 
