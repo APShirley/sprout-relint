@@ -9,8 +9,8 @@ recipes:
 - homebrew::install_casks
 
 # apps
-- capi::iterm2
-- capi::spectacle
+- relint::iterm2
+- relint::spectacle
 
 # settings
 - sprout-osx-settings
@@ -18,9 +18,9 @@ recipes:
 - sprout-ssh::known_hosts_github
 
 - sprout-chruby
-- capi::fast_bosh
-- capi::pullify
-- capi::cf_cli
+- relint::fast_bosh
+- relint::pullify
+- relint::cf_cli
 
 # development (general)
 - sprout-base::workspace_directory
@@ -42,7 +42,7 @@ recipes:
 - sprout-osx-settings::ntp
 - sprout-osx-apps::go
 
-- capi
+- relint
 
 node_attributes:
   sprout:
@@ -56,6 +56,18 @@ node_attributes:
         - initials: aps
           name: Alvaro Perez-Shirley
           username: aperezshirley
+        - initials: rmd
+          name: Rob Dimsdale
+          username: rdimsdale
+        - initials: ds
+          name: David Sabeti
+          username: dsabeti
+        - initials: dl
+          name: Dennis Leon
+          username: dleon
+        - initials: ag
+          name: Amit Gupta
+          username: agupta
       projects:
         - url: https://github.com/cloudfoundry/bosh-lite
         - url: https://github.com/pivotal-cf-experimental/canibump
@@ -130,7 +142,7 @@ node_attributes:
         - fzf
         - fasd
     custom_plugins:
-      capi:
+      relint:
         - bash_it/custom/relint-aliases.bash
         - bash_it/custom/relint-env.bash
         - bash_it/custom/always_duet.bash
